@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nodejs:
+    environment:
+      - NODE_ENV=development
+    build:
+      context: ./nodejs
+      args:
+          - NODE_VERSION=6.10
